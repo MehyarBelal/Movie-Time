@@ -897,35 +897,29 @@ footer img {
   margin-top: 15px;
 }
 
-@media only screen and (max-width: 2300px) {
- 
-  html{
+@media only screen and (max-width: 1500px) {
+  html {
     -moz-transform: scale(0.75, 0.75);
-    zoom: 0.80;
+    zoom: 0.8;
     zoom: 80%;
   }
 
-#nowplaying{
-  padding-top: 10em;
-}
+  #nowplaying {
+    padding-top: 10em;
+  }
 
-section{
-  height: 70vh;
-}
+  section {
+    height: 70vh;
+  }
 
-.status{
-  top: 53em;
-  margin-bottom: 2em;
-}
-iframe{
-  margin-left: 4.8em;
-}
-.summary{
-  height: 100%;
-
-}
-
-
-
-
+  .status {
+    top: 53em;
+    margin-bottom: 2em;
+  }
+  iframe {
+    margin-left: 4.8em;
+  }
+  .summary {
+    height: 100%;
+  }
 }
