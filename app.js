@@ -4,7 +4,7 @@ $(document).ready(function () {
   });
 
   function removeLoader() {
-    $(".loader").fadeOut(300, function () {
+    $(".loader").fadeOut(200, function () {
       // fadeOut complete. Remove the loading div
       $(".loader").remove(); //makes page more lightweight
     });
