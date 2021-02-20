@@ -913,13 +913,38 @@ footer img {
   }
 
   .status {
-    top: 53em;
+    top: 50em;
     margin-bottom: 2em;
+    
   }
   iframe {
-    margin-left: 4.8em;
+    margin-left: 11%;
   }
   .summary {
     height: 100%;
+    
+
+
   }
+
+  .vote{
+    margin-top: 1.5em;
+  left: 9%;
+  }
+  
+  .vote i{
+   
+    font-size: 1.5em;
+    line-height: .5em;
+   
+  }
+  .vote{
+    top: 55%;
+  }
+  .backdrop h1{
+    top: 50%;
+    width: 20em;
+    left: 9%;
+  }
+  
 }
