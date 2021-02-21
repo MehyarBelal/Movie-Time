@@ -696,10 +696,11 @@ h1 {
   width: 100%;
 }
 
-iframe {
+.summary iframe {
+  width: 50em;
   outline: none;
   border: none;
-  margin-right: 375px;
+  margin-right: 33%;
   padding-top: 50px;
 }
 
@@ -724,14 +725,14 @@ iframe {
 .backdrop p {
   text-align: left;
   font-size: 1.4em;
-  width: 1150px;
+  width: 50em;
   line-height: 2;
-  padding-left: 150px;
+  padding-left: 8%;
 }
 .backdrop h2 {
   display: flex;
   justify-content: flex-start;
-  padding-left: 150px;
+  padding-left: 8%;
   font-size: 2.5em;
   padding-top: 50px;
   padding-bottom: 30px;
@@ -796,11 +797,12 @@ footer img {
 .status {
   margin-bottom: 20px;
   position: absolute;
-  top: 900px;
-  left: 140px;
+  top: 30.4%;
+  left: 7.5%;
   display: flex;
   font-weight: 200;
   z-index: 10000000000;
+  font-size: 1em;
 }
 
 .status {
@@ -809,7 +811,7 @@ footer img {
 .review {
   position: absolute;
   top: 1850px;
-  left: 150px;
+  left: 8.5%;
   text-align: left;
   z-index: 10000000000;
 }
@@ -899,9 +901,9 @@ footer img {
 
 @media only screen and (max-width: 1500px) {
   html {
-    -moz-transform: scale(1.0, 1.0);
+    -moz-transform: scale(0.75, 0.75);
     zoom: 0.8;
-    zoom: 85%;
+    zoom: 80%;
   }
 
   #nowplaying {
@@ -947,4 +949,61 @@ footer img {
     left: 9%;
   }
   
+}
+
+@media only screen and (max-width: 768px) {
+  .vote {
+    top: 47%;
+    left: 5%;
+  }
+  .backdrop h1 {
+    top: 40%;
+    left: 5%;
+    width: 60%;
+  }
+  .review {
+    top: 42%;
+    left: 9%;
+  }
+  .sidebar {
+    width: 20%;
+  }
+  ul {
+    padding: 0;
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  #movie-poster {
+    margin-left: 194px;
+    height: 50vh;
+    width: 45%;
+  }
+
+  .banner button {
+    display: none;
+  }
+
+  .status {
+    top: 15%;
+  }
+  .summary {
+    position: absolute;
+
+    transform: translateX(2000px);
+    background-color: #1b2232;
+    height: 300vh;
+    width: 84%;
+    left: 195px;
+    top: 100px;
+  }
+  .summary p {
+    width: 100%;
+  }
+
+  .summary iframe {
+    width: 50em;
+  }
 }
