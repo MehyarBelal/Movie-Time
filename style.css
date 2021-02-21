@@ -834,6 +834,8 @@ footer img {
 }
 
 @media only screen and (max-width: 600px) {
+
+
   section {
     width: 100%;
   }
@@ -897,6 +899,19 @@ footer img {
 
 .bannerbtn {
   margin-top: 15px;
+}
+
+@media only screen  and (max-width: 600px){
+  .before{
+    right: 200px;
+  
+  }
+
+  .next{
+    left: 120px;
+   
+  }
+
 }
 
 @media only screen and (max-width: 1500px) {
@@ -1090,3 +1105,15 @@ left: 400px;
   
 }
 
+
+@media only screen  and (max-width: 600px){
+  .cara1,.cara2,.cara3,.cara4{
+left:0px;
+right:0px;
+padding-right: 50px;
+  }
+
+  .movie{
+    width: !important
+  }
+}
