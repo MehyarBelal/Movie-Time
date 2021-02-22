@@ -1075,12 +1075,17 @@ right: 230px;
   and (orientation: portrait) {
 
     .cara1,.cara2,.cara3,.cara4{
-margin-left:0px;    
+margin-left:80px;    
 width: 200px;
-left: 52px;
-      
+
+      width: 20em;
         }
 
+        .movie img{
+          width: 10em;
+          margin-left: 20px;
+height: 15em;
+        }
         
         .banner{
           height: 60vh;
@@ -1097,12 +1102,12 @@ margin-left: 0px;
 left: 400px;
 }
     .before{
-      right: 200px;
+      right: 290px;
     
     }
   
     .next{
-      left: 120px;
+      left: 125px;
      
     }
   
