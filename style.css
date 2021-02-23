@@ -136,8 +136,12 @@ li:hover {
 
 }
 
-.rating_star{
+.user_rating i{
   color: #f9ca24;
+  font-size: 2.8em;
+  position: absolute;
+  top: 44rem;
+  left: 30.9rem;
 }
 
 

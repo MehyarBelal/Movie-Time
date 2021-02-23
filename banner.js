@@ -33,6 +33,8 @@ $.ajax({
 
     let ori_titles = arr2.slice(0, 5);
     let rating_or = arr3.slice(0, 5);
+
+    alert(rating_or);
     let poster = document.getElementById("movie-poster");
     $(".banner").addClass("animate__animated animate__fadeInRight");
 
@@ -47,19 +49,12 @@ $.ajax({
 
     titles.innerHTML = ori_titles[rand];
 
-    titles.innerHTML = ori_titles[rand];
-    $(".banner").append(
-      "<h2>" +
-        Movie_ratings[rand] +
-        '<i class="rating_star fa fa-star" aria-hidden="true"></i>' +
-        "</h2>"
-    );
-
     setInterval(function () {
       let backydrops = arr.slice(0, 5);
 
       let ori_titles = arr2.slice(0, 5);
 
+      let Movie_ratings = arr3.slice(0, 5);
       let poster = document.getElementById("movie-poster");
       $(".banner").addClass("animate__animated animate__fadeInRight");
 
@@ -75,6 +70,9 @@ $.ajax({
       $("#movie-poster").attr("src", imageUrll + rand_pic);
 
       let titles = document.querySelector(".title");
+
+      titles.innerHTML = ori_titles[rand];
+      $(".rate").text(rating_or[rand]);
     }, 7000);
 
     // console.log(nowplayingMovies[items])
