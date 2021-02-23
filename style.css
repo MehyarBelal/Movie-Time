@@ -790,7 +790,7 @@ h1 {
   padding: 10px;
 }
 .backy:hover {
-  color: #000000;
+  opacity: .7;
   cursor: pointer;
 }
 
