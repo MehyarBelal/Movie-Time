@@ -132,13 +132,13 @@ li:hover {
 
 #movie-poster {
   height: 100%;
- 
-
-}
-
-#movie-poster {
   width: 100%;
+
 }
+
+
+
+
 
 section {
   height: 50%;
@@ -663,6 +663,8 @@ section i {
   left: 700px;
 }
 
+
+
 #coming2 {
   height: 50vh;
 }
@@ -749,18 +751,18 @@ h1 {
 
 .backdrop h1 {
   display: flex;
-  font-size: 2.6em;
+  font-size: 3.6em;
   padding: 20px;
   justify-content: flex-start;
   position: absolute;
   top: 700px;
-  left: 10px;
+  left: 6%;;
 }
 
 .vote {
   position: absolute;
   top: -50px;
-  left: 0px;
+  left: 6%;
   font-size: 0.7em;
 }
 .plot {
@@ -803,11 +805,15 @@ footer img {
   margin: 20px;
 }
 
+
+
 .status {
+  
   margin-bottom: 20px;
   position: absolute;
-  top: 30.4%;
-  left: 7.5%;
+  margin-bottom: 2em;
+  top: 30.9%;
+  left: 7.4%;
   display: flex;
   font-weight: 200;
   z-index: 10000000000;
