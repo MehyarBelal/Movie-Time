@@ -682,6 +682,7 @@ h1 {
 .summary {
   opacity: 1;
 
+
   position: absolute;
   z-index: 2000;
   margin: 0 auto;
@@ -691,6 +692,7 @@ h1 {
   width: 84%;
   left: 300px;
   top: 100px;
+
 }
 
 .hidden {
@@ -703,6 +705,7 @@ h1 {
 
 .summary iframe {
   width: 50em;
+
   outline: none;
   border: none;
   margin-right: 33%;
@@ -714,6 +717,7 @@ h1 {
     flex-direction: column;
   }
 }
+
 
 .vote {
   display: flex;
@@ -840,7 +844,7 @@ footer img {
 
 @media only screen and (max-width: 600px) {
 
-
+ 
   section {
     width: 100%;
   }
@@ -880,6 +884,7 @@ footer img {
     left: 250px;
   }
 
+  
   .cara2 {
     width: 800px;
     left: 250px;
@@ -946,8 +951,9 @@ footer img {
     height: 100%;
     
 
-
   }
+
+
 
   .vote{
     margin-top: 1.5em;
@@ -1028,11 +1034,21 @@ footer img {
   }
 
   .cara1,.cara2,.cara3,.cara4{
-right: 230px;
+right: 210px;
     width: 700px;
 
   }
 
+.active{
+  width: 120px;
+}
+ul {
+font-size: 1rem;
+margin-right: 3rem;
+}
+.section{
+  padding: 20px;
+}
   .movie{
     width: !important;
    
@@ -1042,9 +1058,18 @@ right: 230px;
   h1{
     margin-right:0px;
   }
+  
+
+  .banner h1{
+top:100px;
+    right: 0;;
+    left: 0%;
+
+font-size: 4em;
+  }
 
   .banner{
-    height: 70vh;
+    height: 60vh;
   }
   
   
@@ -1076,6 +1101,32 @@ right: 230px;
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+    .summary h1{
+
+      top: 10%;
+      
+      text-align: left;
+ 
+    }
+
+    .vote{
+      top: 1%;
+    }
+    
+    .summary iframe{
+      width: 80%;
+      height: 13%;
+padding-bottom: 20%;
+    }
+.backdrop img{
+  width: 100%;
+  height: 30%;
+}
+    .summary{
+      width: 100%;
+left: 0px;
+
+    }
     .cara1,.cara2,.cara3,.cara4{
 margin-left:80px;    
 width: 200px;
@@ -1101,7 +1152,11 @@ margin-left: 0px;
 
 
 .banner h1{
-left: 400px;
+  top: 20%;
+right: 0rem;
+left: 1rem;
+margin-left: 2em;
+font-size: 3em;
 }
     .before{
       right: 290px;
