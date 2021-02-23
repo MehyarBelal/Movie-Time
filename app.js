@@ -104,7 +104,7 @@ $(document).ready(function () {
               console.log(info_img);
 
               $(".titles").text("Sorry No Reviews Found For This Flim :/");
-              alert("hello");
+
               $.ajax({
                 url:
                   "https://api.themoviedb.org/3/movie/" +
