@@ -136,10 +136,18 @@ li:hover {
 
 }
 
+.rating_star{
+  color: #f9ca24;
+}
 
 
-
-
+.banner h2{
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 3rem;
+  top: 690px;
+  left: 8.4em;
+}
 section {
   height: 50%;
   width: 100%;
