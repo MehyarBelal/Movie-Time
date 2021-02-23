@@ -103,6 +103,8 @@ $(document).ready(function () {
 
               console.log(info_img);
 
+              $(".titles").text("Sorry No Reviews Found For This Flim :/");
+
               $.ajax({
                 url:
                   "https://api.themoviedb.org/3/movie/" +
@@ -110,13 +112,18 @@ $(document).ready(function () {
                   "/reviews?api_key=" +
                   apikey +
                   "&language=en-US",
-                success: function (result) {
+                success: function (result, textStatus, XMLHttpRequest) {
                   let reviews = result.results;
 
                   for (let i = 0; i < 3; i++) {
                     let posts = reviews[i].content;
                     let authors = reviews[i].author;
 
+                    console.log(reviews[i].content);
+
+                    if (reviews[i].content) {
+                      $(".titles").text("Reviews");
+                    }
                     let blog =
                       '<div class="blog"' +
                       "<p>" +
@@ -130,11 +137,12 @@ $(document).ready(function () {
                       "</div>";
 
                     $(".review").append(blog);
-
-                    if (posts == null) {
-                      alert("no reviews :/");
-                    }
                   }
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                  alert(xhr.status);
+                  alert(xhr.statusText);
+                  alert(xhr.responseText);
                 },
               });
 
