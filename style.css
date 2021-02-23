@@ -1046,7 +1046,8 @@ right: 210px;
   }
 
 .active{
-  width: 120px;
+
+  width: 0px;
 }
 ul {
 font-size: 1rem;

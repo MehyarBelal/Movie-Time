@@ -362,8 +362,6 @@ $.ajax({
       $(".cara3").append(html);
 
       let imgs = imageUrl + movie.backdrop_path;
-
-      console.log("hello");
     });
 
     $(".cara3").slick({
