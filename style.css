@@ -1153,7 +1153,10 @@ font-size: 4em;
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-
+.search-vote{
+  width: 5rem;
+  left: 2.3em;
+}
     
     #search-area{
       width: 1000px;
@@ -1161,12 +1164,18 @@ font-size: 4em;
       display: flex;
     }
 
-    
+    .grid p{
+      width: 10rem;
+    }
     .grid{
       justify-content:center ;
       grid-template-columns: 1fr;
-      left:0px;
+      column-gap: 5rem;
+      row-gap: 6rem;
+    
     }
+
+ 
     .search_draw{
       displaY:block;
 background-color: #1b2232;
