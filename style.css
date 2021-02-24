@@ -332,7 +332,7 @@ img {
 }
 
 .logo {
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 .logo h1 {
   line-height: 50px;
@@ -782,7 +782,7 @@ h1 {
 .vote {
   position: absolute;
   top: -50px;
-  left: 6%;
+  left: 5%;
   font-size: 0.7em;
 }
 .plot {
@@ -852,7 +852,7 @@ footer img {
   margin-bottom: 20px;
   position: absolute;
   margin-bottom: 2em;
-  top: 30.9%;
+  top: 34.9%;
   left: 7.4%;
   display: flex;
   font-weight: 200;
@@ -986,12 +986,14 @@ footer img {
   }
 
   .status {
-    top: 50em;
+    top: 54em;
+ padding-top: 1rem;
+ padding-bottom: 1rem;
     margin-bottom: 2em;
     
   }
   iframe {
-    margin-left: 11%;
+    margin-left: 0%;
   }
   .summary {
     height: 100%;
@@ -1018,7 +1020,7 @@ footer img {
   .backdrop h1{
     top: 50%;
     width: 20em;
-    left: 9%;
+    left: 6%;
   }
   
 }
