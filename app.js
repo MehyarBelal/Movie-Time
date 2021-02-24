@@ -529,3 +529,15 @@ document.addEventListener("scroll", function () {
     toprated.classList.remove("active");
   }
 });
+
+
+
+$('.search_draw').slideToggle();
+$('.search-section').hide();
+
+$('.toggle').click(function(){
+  $('.top').toggleClass('on');
+  $('.search_draw').slideToggle();
+  $('.search-section').slideToggle();
+ 
+})
