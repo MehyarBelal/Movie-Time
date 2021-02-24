@@ -505,25 +505,25 @@ document.addEventListener("scroll", function () {
 
   console.log(scroll_position);
 
-  if (scroll_position > 896 && scroll_position < 1386) {
+  if (scroll_position > 831 && scroll_position < 1168) {
     np.classList.add("active");
   } else {
     np.classList.remove("active");
   }
 
-  if (scroll_position > 1386 && scroll_position < 1880) {
+  if (scroll_position > 1168 && scroll_position < 1505) {
     uc.classList.add("active");
   } else {
     uc.classList.remove("active");
   }
 
-  if (scroll_position > 1880 && scroll_position < 2129) {
+  if (scroll_position > 1505 && scroll_position < 1700) {
     trending.classList.add("active");
   } else {
     trending.classList.remove("active");
   }
 
-  if (scroll_position >= 2129) {
+  if (scroll_position >= 1704) {
     toprated.classList.add("active");
   } else {
     toprated.classList.remove("active");
