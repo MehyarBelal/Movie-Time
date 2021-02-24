@@ -34,7 +34,7 @@ $.ajax({
     let ori_titles = arr2.slice(0, 5);
     let rating_or = arr3.slice(0, 5);
 
-    alert(rating_or);
+  
     let poster = document.getElementById("movie-poster");
     $(".banner").addClass("animate__animated animate__fadeInRight");
 
