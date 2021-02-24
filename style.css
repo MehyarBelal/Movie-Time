@@ -1154,6 +1154,19 @@ font-size: 4em;
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+    
+    #search-area{
+      width: 1000px;
+   
+      display: flex;
+    }
+
+    
+    .grid{
+      justify-content:center ;
+      grid-template-columns: 1fr;
+      left:0px;
+    }
     .search_draw{
       displaY:block;
 background-color: #1b2232;

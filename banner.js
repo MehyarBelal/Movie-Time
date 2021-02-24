@@ -48,7 +48,7 @@ $.ajax({
     let titles = document.querySelector(".title");
 
     titles.innerHTML = ori_titles[rand];
-
+    $(".rate").text(rating_or[rand]);
     setInterval(function () {
       let backydrops = arr.slice(0, 5);
 
