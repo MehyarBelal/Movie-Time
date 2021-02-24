@@ -676,9 +676,13 @@ section i {
 .search-section {
   
   position: absolute;
-  left: 800px;
+  left: 700px;
+  width: 14rem;
 }
 
+.search-section button{
+  width: 10rem;
+}
 
 
 #coming2 {
@@ -1164,6 +1168,7 @@ background-color: #1b2232;
     top:85px;
     left: 50px;
   z-index: 40000;
+  width: 10rem;
 
    
   }
@@ -1272,3 +1277,5 @@ padding-right: 50px;
   .movie{
     width: !important;
   }
+
+  

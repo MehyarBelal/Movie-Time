@@ -533,11 +533,11 @@ document.addEventListener("scroll", function () {
 
 
 $('.search_draw').slideToggle();
-$('.search-section').hide();
 
+$('.search_draw').hide();
 $('.toggle').click(function(){
   $('.top').toggleClass('on');
-  $('.search_draw').slideToggle();
+  $('.search_draw').slide();
   $('.search-section').slideToggle();
  
 })
