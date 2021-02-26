@@ -825,9 +825,9 @@ footer {
 footer img {
   width: 230px;
   height: 100px;
-  margin-left: 300px;
+
   z-index: 10;
-  margin: 20px;
+  
 }
 
 .search_draw{
