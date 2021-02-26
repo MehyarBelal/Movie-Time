@@ -24,7 +24,7 @@ $(document).ready(function () {
       let imageUrl = "https://image.tmdb.org/t/p/original/";
 
       nowplayingMovies.forEach(function (movie) {
-        let rating = Math.floor(Math.random() * 10 + 2);
+        let rating = Math.floor(Math.random() * 10 + 3);
         let point = Math.floor(Math.random() * 9);
 
         rating = rating + "." + point;
@@ -139,10 +139,9 @@ $(document).ready(function () {
                     $(".review").append(blog);
                   }
                 },
-                error: function (xhr, ajaxOptions, thrownError) {
-                  alert(xhr.status);
-                  alert(xhr.statusText);
-                  alert(xhr.responseText);
+                error: function (xhr, status, error) {
+                  var err = eval("(" + xhr.responseText + ")");
+                  alert(err.Message);
                 },
               });
 
@@ -338,6 +337,7 @@ $.ajax({
     "https://api.themoviedb.org/3/trending/all/day?api_key=" +
     apikey +
     "&language=en-US&page=1",
+
   success: function (result) {
     let nowplayingMovies = result.results;
 
@@ -530,14 +530,11 @@ document.addEventListener("scroll", function () {
   }
 });
 
+$(".search_draw").slideToggle();
 
-
-$('.search_draw').slideToggle();
-
-$('.search_draw').hide();
-$('.toggle').click(function(){
-  $('.top').toggleClass('on');
-  $('.search_draw').slide();
-  $('.search-section').slideToggle();
- 
-})
+$(".search_draw").hide();
+$(".toggle").click(function () {
+  $(".top").toggleClass("on");
+  $(".search_draw").slide();
+  $(".search-section").slideToggle();
+});
