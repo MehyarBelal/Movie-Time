@@ -737,6 +737,7 @@ h1 {
   border: none;
   margin-right: 33%;
   padding-top: 50px;
+  margin-left: 9%;
 }
 
 @media only screen and (max-width: 992px) {
@@ -752,6 +753,7 @@ h1 {
   padding: 20px;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-left: 1rem;
 }
 
 .backdrop {
@@ -852,12 +854,16 @@ footer img {
 
 }
 
+.vote h1{
+  
+}
+
 .status {
   
   margin-bottom: 20px;
   position: absolute;
   margin-bottom: 2em;
-  top: 34.9%;
+  top: 31.4%;
   left: 2.4%;
   display: flex;
   font-weight: 200;
@@ -997,6 +1003,7 @@ footer img {
     margin-bottom: 2em;
     
   }
+
   iframe {
     margin-left: 0%;
   }
