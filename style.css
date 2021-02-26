@@ -837,11 +837,12 @@ footer img {
 }
 
 .toggle{
-  font-size: 2.5em;
+  font-size: 3.5em;
   line-height: 80px;
   padding-right: .6em;
   color: #ece6e7;
   display:none;
+  margin-top: 1.4rem;
 }
 .toggle:hover{
   cursor: pointer;
@@ -854,9 +855,6 @@ footer img {
 
 }
 
-.vote h1{
-  
-}
 
 .status {
   
