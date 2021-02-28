@@ -63,11 +63,6 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-This single-page application takes advantage of The Movie DB API to show various movies ranging from now playing in theatres, upcoming, trending, top-rating, and much more.
-
-
-
-
 Using The Movie DB API this single-page applications allows a user to view movie information including reviews and trailers. A user can view now playing in theatres, up coming, trending and top-rating and more. 
 
 ### Built With
