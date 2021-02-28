@@ -68,9 +68,10 @@ This single-page application takes advantage of The Movie DB API to show various
 
 
 
+Using The Movie DB API this single-page applications allows a user to view movie information including reviews and trailers. A user can view now playing in theatres, up coming, trending and top-rating and more. 
+
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [The Movie DB (API)](https://www.themoviedb.org/)
 * [JQuery](https://jquery.com)
 * [Animate.css](https://animate.style/)
@@ -94,13 +95,13 @@ This is an example of how to list things you need to use the software and how to
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/MehyarBelal/Movie-Time.git
    ```
 3. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+4. Enter your API in `app.js`
    ```JS
    const API_KEY = 'ENTER YOUR API';
    ```
@@ -131,7 +132,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Twitter - [@Mehyar_Belal](https://twitter.com/Mehyar66066336) 
 
-Project Link: [https://github.com/MehyarBelal/Movie-Time(https://github.com/MehyarBelal/Movie-Time)
+Project Link: [https://github.com/MehyarBelal/Movie-Time](https://github.com/MehyarBelal/Movie-Time)
 
 
 
