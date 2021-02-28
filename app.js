@@ -538,3 +538,7 @@ $(".toggle").click(function () {
   $(".search_draw").slide();
   $(".search-section").slideToggle();
 });
+
+$(".logo").click(function () {
+  window.location.href = "./index.html";
+});
