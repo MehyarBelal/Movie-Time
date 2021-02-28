@@ -604,6 +604,7 @@ h1 {
   margin-left: 340px;
 }
 
+
 .cara2 {
   width: 1200px;
   height: 1500px;
@@ -622,6 +623,9 @@ h1 {
   margin-left: 340px;
 }
 
+.toggle{
+  display: none !important;
+}
 .cara1,.cara2,.cara3,.cara4{
   width:81.25rem;
 }
@@ -843,6 +847,7 @@ footer img {
   color: #ece6e7;
   display:none;
   margin-top: 1.4rem;
+  
 }
 .toggle:hover{
   cursor: pointer;
@@ -965,6 +970,7 @@ footer img {
 .bannerbtn {
   margin-top: 15px;
 }
+
 
 @media only screen  and (max-width: 600px){
   .before{
@@ -1228,7 +1234,7 @@ background-color: #1b2232;
   height: 10rem;
 }
     .toggle{
-      displaY:block;
+      displaY:block !important;
     }
   
   
