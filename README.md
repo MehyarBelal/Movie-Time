@@ -79,15 +79,11 @@ Using The Movie DB API this single-page applications allows a user to view movie
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* Get a free API Key at [The Movie DB (API)](https://www.themoviedb.org/)
-  ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Get a free API Key at [The Movie DB (API)](https://www.themoviedb.org/)
 
 
 2. Clone the repo
