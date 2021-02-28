@@ -19,14 +19,14 @@
   <p align="center">
  Browse your favorite movies, Read Their Reviews and watch trailers. See what's playing in theaters right now. Discover upcoming, trending, and top-rated titles.
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/MehyarBelal/Movie-Time"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/MehyarBelal/Movie-Time/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/MehyarBelal/Movie-Time/issues">Request Feature</a>
   </p>
 </p>
 
@@ -40,6 +40,9 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        
+        <li> JQuery </li>
+        <li> AJAX </li>
       </ul>
     </li>
     <li>
@@ -116,7 +119,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/MehyarBelal/Movie-Time/issues) for a list of proposed features (and known issues).
 
 
 
