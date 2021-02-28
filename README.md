@@ -139,4 +139,9 @@ Project Link: [https://github.com/MehyarBelal/Movie-Time](https://github.com/Meh
 * [Font Awesome](https://fontawesome.com)
 
 [product-screenshot]: images/screenshot.JPG
-
+[build-shield]: https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/badge/contributors-1-orange.svg?style=flat-square
+[license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
+[license-url]: https://choosealicense.com/licenses/mit
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/mehyar-belal-381710117/
