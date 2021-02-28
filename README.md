@@ -41,8 +41,8 @@
       <ul>
         <li><a href="#built-with">Built With</a></li>
         
-        <li> JQuery </li>
-        <li> AJAX </li>
+         *JQuery 
+         *AJAX 
       </ul>
     </li>
     <li>
