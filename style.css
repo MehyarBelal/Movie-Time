@@ -1070,18 +1070,25 @@ footer img {
 
 }
   .vote {
-    top: 47%;
+    top: 4rem;
     left: 5%;
   }
 
 
+  .vote i {
+    font-size: 2.5rem;
+    line-height: 40px;
+  }
+footer{
+  display:none;
+}
   .backdrop h1 {
-    top: 40%;
+    top: 12rem;
     left: 5%;
     width: 80%;
   }
   .review {
-    top: 42%;
+    top: 100rem;
     left: 9%;
   }
   .sidebar {
