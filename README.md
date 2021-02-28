@@ -169,4 +169,5 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 * [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
 * [Font Awesome](https://fontawesome.com)
 
+[product-screenshot]: images/screenshot.png
 
