@@ -1044,6 +1044,22 @@ footer img {
 @media only screen and (max-width: 768px) {
 
   
+  .user_rating{
+
+    position: absolute;
+    bottom: 53rem;
+    right: 86rem;
+  }
+  
+ 
+  
+  .user_rating i{
+    line-height: 40px;
+    padding-left: .6rem;
+  }
+  
+
+
 .search-section{
  left:350px;
 
@@ -1181,6 +1197,24 @@ font-size: 4em;
    
       display: flex;
     }
+
+.user_rating{
+
+  position: absolute;
+  bottom: 55rem;
+  right: 56rem;
+}
+
+.user_rating h2{
+  font-size: 3rem;
+
+}
+
+
+.user_rating i{
+  line-height: 40px;
+  padding-left: .6rem;
+}
 
     .grid p{
       width: 10rem;
