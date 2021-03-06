@@ -31,7 +31,7 @@ $(document).ready(function () {
         var html =
           '<div class="movie">' +
           '<div class="rating">' +
-          rating +
+          movie.vote_average +
           '<i class="rating_star fa fa-star" aria-hidden="true"></i>' +
           "</div>" +
           "<img src=" +
@@ -272,7 +272,7 @@ $.ajax({
       var html =
         '<div class="movie">' +
         '<div class="rating">' +
-        rating +
+        movie.vote_average +
         '<i class="rating_star fa fa-star" aria-hidden="true"></i>' +
         "</div>" +
         "<img src=" +
@@ -353,7 +353,7 @@ $.ajax({
       var html =
         '<div class="movie">' +
         '<div class="rating">' +
-        rating +
+        movie.vote_average +
         '<i class="rating_star fa fa-star" aria-hidden="true"></i>' +
         "</div>" +
         "<img src=" +
@@ -434,7 +434,7 @@ $.ajax({
       var html =
         '<div class="movie">' +
         '<div class="rating">' +
-        rating +
+        movie.vote_average +
         '<i class="rating_star fa fa-star" aria-hidden="true"></i>' +
         "</div>" +
         "<img src=" +
