@@ -786,7 +786,7 @@ h1 {
 }
 
 .user_rating i{
-  padding-left: .2rem;
+  padding-left: .rem;
 }
 
 .backdrop h1 {
@@ -818,6 +818,9 @@ h1 {
   color: #f9ca24;
 }
 
+.blog {
+  font-size: 1.5rem;
+}
 .backy {
   position: absolute;
   z-index: 60000000;
@@ -872,10 +875,10 @@ footer img {
 
 .status {
   
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   position: absolute;
   margin-bottom: 2em;
-  top: 31.4%;
+  top: 20.4%;
   left: 2.4%;
   display: flex;
   font-weight: 200;
