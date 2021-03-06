@@ -737,6 +737,8 @@ h1 {
   width: 100%;
 }
 
+
+
 .summary iframe {
   width: 50em;
 
@@ -784,8 +786,7 @@ h1 {
 }
 
 .user_rating i{
-  line-height: 40px;
-  padding-left: .5rem;
+  padding-left: .2rem;
 }
 
 .backdrop h1 {
