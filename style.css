@@ -771,7 +771,7 @@ h1 {
 
 .backdrop p {
   text-align: left;
-  font-size: 1.4em;
+  font-size: 1.6em;
   width: 50em;
   line-height: 2;
   padding-left: 8%;
@@ -1132,9 +1132,6 @@ footer{
     left: 195px;
     top: 100px;
     
-  }
-  .summary p {
-    width: 100%;
   }
 
   .summary iframe {
