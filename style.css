@@ -223,6 +223,16 @@ input {
   transition: all 0.5s ease;
   opacity: 0.8;
 }
+
+.user_rating h2:after{
+  font-family: "Font Awesome 5 Free";
+   content: "\f005";
+color:#f9ca24;
+   padding-left: 10px;
+   
+  
+}
+
 img {
   padding: 0;
 }
@@ -875,11 +885,11 @@ footer img {
 
 .toggle{
   font-size: 3.5em;
-  line-height: 80px;
+ 
   padding-right: .6em;
   color: #ece6e7;
   display:none;
-  margin-top: 1.4rem;
+  margin-top: 12px;
   
 }
 .toggle:hover{
@@ -1243,10 +1253,10 @@ font-size: 4em;
   and (orientation: portrait) {
 
 
+    
     .backdrop h1{
       font-size: 2.5rem;
-      position: absolute;
-bottom: 2rem;
+      
 width: 500px;
     }
  .vote h1{
@@ -1257,6 +1267,9 @@ width: 500px;
 .search-vote{
   width: 5rem;
   left: 2.3em;
+}
+.bannerbtn{
+  display:none;
 }
     
     #search-area{
@@ -1269,19 +1282,24 @@ width: 500px;
 
   position: absolute;
   bottom: 55rem;
-  right: 56rem;
+  right: 36rem;
+  
 }
 
 .user_rating h2{
-  font-size: 3rem;
-
+  font-size: 2em;
 }
 
 
-.user_rating i{
-  line-height: 40px;
-  padding-left: .6rem;
+.user_rating h2:after{
+  font-family: "Font Awesome 5 Free";
+   content: "\f005";
+color:#f9ca24;
+   padding-left: 10px;
+   
+  
 }
+
 
     .grid p{
       width: 10rem;
@@ -1336,8 +1354,10 @@ background-color: #1b2232;
 }
     .toggle{
       displaY:block !important;
+     
     }
   
+    
   
     .summary h1{
 
@@ -1360,7 +1380,7 @@ padding-bottom: 20%;
     }
 .backdrop img{
   width: 100%;
-  height: 30%;
+ 
 }
     .summary{
       width: 100%;
@@ -1368,7 +1388,7 @@ left: 0px;
 
     }
     .cara1,.cara2,.cara3,.cara4{
-margin-left:80px;    
+margin: 0 auto;  
 width: 200px;
 
       width: 20em;
@@ -1384,21 +1404,15 @@ height: 15em;
           height: 60vh;
         }
         
-#movie-poster{
-  width: 100% !important;
-  height: 80% !important;
-
-}
 
 .vote h1{
   top: 3rem;
 }
 .banner h1{
-  top: 20%;
-right: 0rem;
-left: 1rem;
-margin-left: 2em;
-font-size: 3em;
+ top: 1em;
+
+
+font-size: 2.3em;
 }
     .before{
       right: 290px;
