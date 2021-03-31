@@ -729,6 +729,10 @@ h1 {
 
 }
 
+
+#movie-poster{
+  width: 84% !important;
+}
 .hidden {
   display: none;
 }
@@ -817,6 +821,8 @@ h1 {
   padding-left: 10px;
   color: #f9ca24;
 }
+
+
 
 section {
   height: 70vh !important;
@@ -1118,6 +1124,8 @@ footer{
   .section {
     width: 100%;
   }
+
+  #
 
   #movie-poster {
     margin-left: 194px;
