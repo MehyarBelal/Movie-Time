@@ -896,9 +896,11 @@ footer img {
   font-size: 1em;
 }
 
-
+.loader{
+  z-index: 10000000000000000000000000000000000000000000000000000;
+}
 .sidebar{
-  z-index: 1000000000000000000000000000000000 !important;
+  z-index: 1000000 !important;
 }
 
 .status {
