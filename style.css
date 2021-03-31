@@ -32,6 +32,7 @@ body {
   grid-area: sidebar;
 }
 
+
 .main {
   background-color: #1b2232;
   grid-area: main;
