@@ -1404,13 +1404,16 @@ height: 15em;
           height: 60vh;
         }
         
-
+.section{
+  margin-top:0;
+  margin-bottom:0;
+}
+       
 .vote h1{
   top: 3rem;
 }
 .banner h1{
  top: 1em;
-
 
 font-size: 2.3em;
 }
