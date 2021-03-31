@@ -35,6 +35,8 @@ body {
 .main {
   background-color: #1b2232;
   grid-area: main;
+  width: 100%;
+  background-color: #f9ca24;
 }
 .top img {
   width: 100%;
@@ -128,11 +130,7 @@ li:hover {
   color: #afb1c2;
 }
 
-#movie-poster {
-  height: 100%;
-  width: 100%;
 
-}
 
 .logo:hover{
   cursor: pointer;
@@ -432,11 +430,7 @@ h1 {
   font-size: 1rem;
 }
 
-#movie-poster {
-  width: 100%;
-  margin-left: 300px;
-  position: relative;
-}
+
 
 .bannerbtn {
   position: absolute;
@@ -726,9 +720,12 @@ h1 {
 }
 
 
-#movie-poster{
-  width: 84% !important;
+.banner{
+  display:flex;
+flex-direction: column;
 }
+
+
 .hidden {
   display: none;
 }
@@ -1133,11 +1130,7 @@ footer{
 
   #
 
-  #movie-poster {
-    margin-left: 194px;
-    height:   100%;
-    width: 45%;
-  }
+
 
   .banner button {
     display: none;
@@ -1200,6 +1193,7 @@ font-size: 4em;
 
   .banner{
     height: 60vh;
+    width: 100 !important%;
   }
   
   
@@ -1212,8 +1206,8 @@ font-size: 4em;
   }
 
   #movie-poster{
-    width: 63%;
-    height: 100%;
+    width: 100% !important;
+    height: 80% !important;
   }
   
   .banner h1{
@@ -1373,11 +1367,7 @@ height: 15em;
           height: 60vh;
         }
         
-#movie-poster{
-  width: 100%;
-  height: 100%;
-margin-left: 0px;
-}
+
 
 .vote h1{
   top: 3rem;
