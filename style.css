@@ -844,15 +844,17 @@ section {
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   align-items: flex-end;
   padding: 10px;
+  margin-left: 17em;
 }
 
 footer img {
   width: 230px;
   height: 100px;
 
-  z-index: 1;
+
   
 }
 

@@ -494,6 +494,7 @@ $.ajax({
 
 $(".backy").click(function () {
   location.href = "index.html";
+  location.reload();
 });
 
 document.addEventListener("scroll", function () {
