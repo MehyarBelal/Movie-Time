@@ -430,7 +430,11 @@ h1 {
   font-size: 1rem;
 }
 
-
+#movie-poster {
+  width: 100%;
+ 
+ 
+}
 
 .bannerbtn {
   position: absolute;
@@ -1367,7 +1371,11 @@ height: 15em;
           height: 60vh;
         }
         
+#movie-poster{
+  width: 100% !important;
+  height: 80% !important;
 
+}
 
 .vote h1{
   top: 3rem;
