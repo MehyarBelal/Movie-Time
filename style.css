@@ -1281,8 +1281,8 @@ width: 500px;
 .user_rating{
 
   position: absolute;
-  bottom: 55rem;
-  right: 36rem;
+  bottom: 55px;
+  right: 36px;
   
 }
 
@@ -1380,7 +1380,15 @@ padding-bottom: 20%;
     }
 .backdrop img{
   width: 100%;
- 
+ height: 100%;
+}
+
+.blog{
+  width: 60% !important;
+}
+
+.backdrop p{
+  width: 100%;
 }
     .summary{
       width: 100%;
