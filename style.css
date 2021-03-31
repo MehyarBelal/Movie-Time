@@ -818,6 +818,10 @@ h1 {
   color: #f9ca24;
 }
 
+section {
+  height: 70vh !important;
+}
+
 .blog {
   font-size: 1.5rem;
 }
@@ -884,6 +888,11 @@ footer img {
   font-weight: 200;
   z-index: 10000000000;
   font-size: 1em;
+}
+
+
+.sidebar{
+  z-index: 1000000000000000000000000000000000 !important;
 }
 
 .status {
@@ -1050,7 +1059,8 @@ footer img {
     width: 25em;
     left: 6%;
   }
-  
+
+
 }
 
 @media only screen and (max-width: 768px) {
