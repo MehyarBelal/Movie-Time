@@ -157,6 +157,8 @@ setTimeout(function () {
 
           let id = flim.id;
 
+          $(".titles").text("Sorry No Reviews Found For This Flim :/");
+
           $.ajax({
             url:
               "https://api.themoviedb.org/3/movie/" +
@@ -170,7 +172,9 @@ setTimeout(function () {
               for (let i = 0; i < 3; i++) {
                 let posts = reviews[i].content;
                 let authors = reviews[i].author;
-
+                if (reviews[i].content) {
+                  $(".titles").text("Reviews");
+                }
                 let blog =
                   '<div class="blog"' +
                   "<p>" +
