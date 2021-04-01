@@ -112,7 +112,6 @@ h3 {
   margin: 10px;
 }
 
-
 .sidebar a {
   list-style: none;
   text-decoration: none;
@@ -561,7 +560,6 @@ h1 {
   font-size: 1.3em;
 }
 
-.summ
 .back:hover {
   transform: scale(1.2);
   opacity: 0.9;
@@ -737,12 +735,12 @@ h1 {
 
 
   position: absolute;
-  z-index: 1000 !important;
+  z-index: 100000;
   margin: 0 auto;
   transform: translateX(2000px);
   background-color: #1b2232;
   height: 300vh;
-  width: 85%;
+  width: 84%;
   left: 300px;
   top: 100px;
 
@@ -946,7 +944,7 @@ footer img {
 }
 
 .review h5{
-  margin-top: 1rem;
+  margin-top: rem;
 }
 
 .review h4 {
