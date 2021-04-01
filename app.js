@@ -658,3 +658,5 @@ $(".toggle").click(function () {
 $(".logo").click(function () {
   window.location.href = "./index.html";
 });
+
+$(".dbogo").css("display", "none");

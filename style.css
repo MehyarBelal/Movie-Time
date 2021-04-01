@@ -737,7 +737,7 @@ h1 {
 
 
   position: absolute;
-  z-index: 10000000000000000000000000000000000 !important;
+  z-index: 1000 !important;
   margin: 0 auto;
   transform: translateX(2000px);
   background-color: #1b2232;
