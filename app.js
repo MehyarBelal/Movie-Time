@@ -287,7 +287,6 @@ $.ajax({
 
     moviess.forEach(function (flickk) {
       flickk.addEventListener("click", function () {
-        console.log(flickk);
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
         $(".summary")
@@ -297,6 +296,7 @@ $.ajax({
         let movie_titlee = flickk.children[2].innerHTML;
 
         console.log(movie_titlee);
+
         $.ajax({
           url:
             "https://api.themoviedb.org/3/search/movie?query=" +
