@@ -935,10 +935,16 @@ footer img {
 }
 .review {
   position: absolute;
-  top: 1850px;
+  font-size: 2em;
+  
+  top: 2000px;
   left: 8.5%;
   text-align: left;
   z-index: 10000000000;
+}
+
+.review h5{
+  margin-top: 1rem;
 }
 
 .review h4 {
