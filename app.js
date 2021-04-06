@@ -10,6 +10,126 @@ $(document).ready(function () {
     });
   }
 
+  let movies = document.querySelectorAll(".movie");
+
+  movies.forEach(function (flick) {
+    flick.addEventListener("click", function () {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      $(".summary")
+        .toggleClass("hidden")
+        .addClass("animate__animated animate__fadeInRight");
+
+      let movie_title = flick.children[2].innerHTML;
+
+      $.ajax({
+        url:
+          "https://api.themoviedb.org/3/search/movie?query=" +
+          movie_title +
+          "&api_key=" +
+          apikey +
+          "&append_to_response=videos&language=en-US&page=1&include_adult=false",
+        success: function (result) {
+          let flim = result.results[0];
+
+          var summary =
+            '<div class="backdrop">' +
+            "<img src=" +
+            '"' +
+            imageUrl +
+            flim.backdrop_path +
+            '"' +
+            ">" +
+            "<h1>" +
+            flim.original_title +
+            "</h1>" +
+            "<h2> Summary </h2>" +
+            "<p>" +
+            flim.overview +
+            "<p>" +
+            '<div class="vote">' +
+            "<h1>" +
+            flim.vote_average +
+            "/10 " +
+            " " +
+            '<i class="fa fa-star" aria-hidden="true"></i>';
+          ("</h1>");
+          ("</div>");
+          ("</div>");
+
+          let id = flim.id;
+
+          let info_img = $(".backdrop img");
+
+          $(".titles").text("Sorry No Reviews Found For This Flim :/");
+
+          $.ajax({
+            url:
+              "https://api.themoviedb.org/3/movie/" +
+              id +
+              "/reviews?api_key=" +
+              apikey +
+              "&language=en-US",
+            success: function (result, textStatus, XMLHttpRequest) {
+              let reviews = result.results;
+
+              for (let i = 0; i < 3; i++) {
+                let posts = reviews[i].content;
+                let authors = reviews[i].author;
+
+                if (reviews[i].content) {
+                  $(".titles").text("Reviews");
+                }
+                let blog =
+                  '<div class="blog"' +
+                  "<p>" +
+                  posts +
+                  "<p>" +
+                  "<br>" +
+                  '<p class="author"> ' +
+                  "- " +
+                  authors +
+                  "<p>" +
+                  "</div>";
+
+                $(".review").append(blog);
+              }
+            },
+            error: function (xhr, status, error) {
+              var err = eval("(" + xhr.responseText + ")");
+              alert(err.Message);
+            },
+          });
+
+          $.ajax({
+            url:
+              "https://api.themoviedb.org/3/movie/" +
+              id +
+              "/videos?api_key=" +
+              apikey +
+              "&language=en-US",
+            success: function (result) {
+              let youtube = "https://www.youtube.com/embed/";
+              let key = result.results[0].key;
+
+              let trailer =
+                '<iframe width="920" height="515"' +
+                'src="' +
+                youtube +
+                key +
+                '">' +
+                "</iframe>";
+
+              $(".summary").append(trailer);
+            },
+          });
+
+          $(".summary").append(summary);
+        },
+      });
+    });
+  });
+
   //api request stuff
   $.ajax({
     url:
@@ -46,126 +166,6 @@ $(document).ready(function () {
         ("</div>");
 
         $(".cara1").append(html);
-      });
-
-      let movies = document.querySelectorAll(".movie");
-
-      movies.forEach(function (flick) {
-        flick.addEventListener("click", function () {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-          $(".summary")
-            .toggleClass("hidden")
-            .addClass("animate__animated animate__fadeInRight");
-
-          let movie_title = flick.children[2].innerHTML;
-
-          $.ajax({
-            url:
-              "https://api.themoviedb.org/3/search/movie?query=" +
-              movie_title +
-              "&api_key=" +
-              apikey +
-              "&append_to_response=videos&language=en-US&page=1&include_adult=false",
-            success: function (result) {
-              let flim = result.results[0];
-
-              var summary =
-                '<div class="backdrop">' +
-                "<img src=" +
-                '"' +
-                imageUrl +
-                flim.backdrop_path +
-                '"' +
-                ">" +
-                "<h1>" +
-                flim.original_title +
-                "</h1>" +
-                "<h2> Summary </h2>" +
-                "<p>" +
-                flim.overview +
-                "<p>" +
-                '<div class="vote">' +
-                "<h1>" +
-                flim.vote_average +
-                "/10 " +
-                " " +
-                '<i class="fa fa-star" aria-hidden="true"></i>';
-              ("</h1>");
-              ("</div>");
-              ("</div>");
-
-              let id = flim.id;
-
-              let info_img = $(".backdrop img");
-
-              $(".titles").text("Sorry No Reviews Found For This Flim :/");
-
-              $.ajax({
-                url:
-                  "https://api.themoviedb.org/3/movie/" +
-                  id +
-                  "/reviews?api_key=" +
-                  apikey +
-                  "&language=en-US",
-                success: function (result, textStatus, XMLHttpRequest) {
-                  let reviews = result.results;
-
-                  for (let i = 0; i < 3; i++) {
-                    let posts = reviews[i].content;
-                    let authors = reviews[i].author;
-
-                    if (reviews[i].content) {
-                      $(".titles").text("Reviews");
-                    }
-                    let blog =
-                      '<div class="blog"' +
-                      "<p>" +
-                      posts +
-                      "<p>" +
-                      "<br>" +
-                      '<p class="author"> ' +
-                      "- " +
-                      authors +
-                      "<p>" +
-                      "</div>";
-
-                    $(".review").append(blog);
-                  }
-                },
-                error: function (xhr, status, error) {
-                  var err = eval("(" + xhr.responseText + ")");
-                  alert(err.Message);
-                },
-              });
-
-              $.ajax({
-                url:
-                  "https://api.themoviedb.org/3/movie/" +
-                  id +
-                  "/videos?api_key=" +
-                  apikey +
-                  "&language=en-US",
-                success: function (result) {
-                  let youtube = "https://www.youtube.com/embed/";
-                  let key = result.results[0].key;
-
-                  let trailer =
-                    '<iframe width="920" height="515"' +
-                    'src="' +
-                    youtube +
-                    key +
-                    '">' +
-                    "</iframe>";
-
-                  $(".summary").append(trailer);
-                },
-              });
-
-              $(".summary").append(summary);
-            },
-          });
-        });
       });
 
       $(".cara1").slick({
@@ -283,49 +283,46 @@ $.ajax({
       $(".cara2").append(html);
     });
 
-    let moviess = document.querySelectorAll(".movie");
+    let movies = document.querySelectorAll(".movie");
 
-    moviess.forEach(function (flickk) {
-      flickk.addEventListener("click", function () {
+    movies.forEach(function (flick) {
+      flick.addEventListener("click", function () {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
         $(".summary")
           .toggleClass("hidden")
           .addClass("animate__animated animate__fadeInRight");
 
-        let movie_titlee = flickk.children[2].innerHTML;
-
-        console.log(movie_titlee);
+        let movie_title = flick.children[2].innerHTML;
 
         $.ajax({
           url:
             "https://api.themoviedb.org/3/search/movie?query=" +
-            movie_titlee +
+            movie_title +
             "&api_key=" +
             apikey +
             "&append_to_response=videos&language=en-US&page=1&include_adult=false",
           success: function (result) {
-            let flimm = result.results[0];
+            let flim = result.results[0];
 
-            console.log(flimm);
             var summary =
               '<div class="backdrop">' +
               "<img src=" +
               '"' +
               imageUrl +
-              flimm.backdrop_path +
+              flim.backdrop_path +
               '"' +
               ">" +
               "<h1>" +
-              flimm.original_title +
+              flim.original_title +
               "</h1>" +
               "<h2> Summary </h2>" +
               "<p>" +
-              flimm.overview +
+              flim.overview +
               "<p>" +
               '<div class="vote">' +
               "<h1>" +
-              flimm.vote_average +
+              flim.vote_average +
               "/10 " +
               " " +
               '<i class="fa fa-star" aria-hidden="true"></i>';
@@ -333,7 +330,7 @@ $.ajax({
             ("</div>");
             ("</div>");
 
-            let idd = flimm.id;
+            let id = flim.id;
 
             let info_img = $(".backdrop img");
 
@@ -342,18 +339,18 @@ $.ajax({
             $.ajax({
               url:
                 "https://api.themoviedb.org/3/movie/" +
-                idd +
+                id +
                 "/reviews?api_key=" +
                 apikey +
                 "&language=en-US",
               success: function (result, textStatus, XMLHttpRequest) {
-                let reviewss = result.results;
+                let reviews = result.results;
 
                 for (let i = 0; i < 3; i++) {
-                  let posts = reviewss[i].content;
-                  let authors = reviewss[i].author;
+                  let posts = reviews[i].content;
+                  let authors = reviews[i].author;
 
-                  if (reviewss[i].content) {
+                  if (reviews[i].content) {
                     $(".titles").text("Reviews");
                   }
                   let blog =
@@ -380,23 +377,23 @@ $.ajax({
             $.ajax({
               url:
                 "https://api.themoviedb.org/3/movie/" +
-                idd +
+                id +
                 "/videos?api_key=" +
                 apikey +
                 "&language=en-US",
               success: function (result) {
-                let youtubee = "https://www.youtube.com/embed/";
-                let keyy = result.results[0].key;
+                let youtube = "https://www.youtube.com/embed/";
+                let key = result.results[0].key;
 
-                let trailerr =
+                let trailer =
                   '<iframe width="920" height="515"' +
                   'src="' +
-                  youtubee +
-                  keyy +
+                  youtube +
+                  key +
                   '">' +
                   "</iframe>";
 
-                $(".summary").append(trailerr);
+                $(".summary").append(trailer);
               },
             });
 
