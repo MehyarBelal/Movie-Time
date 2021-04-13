@@ -55,7 +55,7 @@ body {
   justify-content: space-between;
   padding: 10px;
   height: 100px;
-  z-index: 2000000000000000000;
+  z-index: 2000000000000000000000000000000000000000000000000000000000000000000 !important;
   position: absolute;
 }
 
@@ -1075,7 +1075,7 @@ footer img {
   }
   .summary {
     height: 100% !important;
-    z-index: 1000000000000000000000000000000000 !important;
+    z-index: 100000000000000000000!important;
     
 
   }
