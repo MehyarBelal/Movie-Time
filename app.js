@@ -242,7 +242,7 @@ $(".top button").click(function () {
 
     localStorage.setItem("selected", SearchInput);
 
-    console.log(SearchInput);
+    
   }
 });
 

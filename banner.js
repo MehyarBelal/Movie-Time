@@ -14,7 +14,6 @@ $.ajax({
     for (let i = 0; i < 5; i++) {
       let data = nowplayingMoviess[i];
 
-      console.log(data);
       for (let b = 0; b < 1; b++) {
         let newdata = Object.values(data);
         console.log(newdata);
